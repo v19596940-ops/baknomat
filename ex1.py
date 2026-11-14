@@ -20,8 +20,8 @@ class ATM:
             print(f"Сумма должна быть от 50 рублей или недостаточно средств")
 
     def perevod(self, amount):
-        USD = self.balance / 80
-        EUR = self.balance / 93
+        USD = roumd(self.balance / 80, 1)
+        EUR = round(self.balance / 93, 1)
         print(f"Баланс в долларах (USD)_{USD}")
         print(f"Баланс в евро (EUR) {EUR}")
 
